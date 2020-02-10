@@ -4,7 +4,7 @@ Supported image extension **(svg|png|jpg|jpeg|gif)**.
 
 ## Introduction
 
-Here is my gulpfile to quickly compress images with or without loss of quality.
+Here is my gulpfile to quickly compress images with or without loss of quality.\
 **Feel free to suggest improvements by creating issues or fork it !**
 
 &nbsp; <!-- break line -->
@@ -21,7 +21,7 @@ This project includes lot of nodes module. Please read package.json and package-
 
 2. Install dependencies of npm using `npm i`.
 
-3. Moove your images in `input` folder.
+3. Moove your images in `input` folder.\
 **⚠ Be careful, do not put the files in the "output" folder. It will be cleared at runtime ⚠**
 
 4. Run `gulp` with one command discribe bellow.
