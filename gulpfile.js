@@ -9,23 +9,26 @@ const inputFolder = './input/';
 const outputFolder = './output/';
 const imgExtension = '*.+(svg|png|jpg|jpeg|gif)';
 
+const srcFiles = inputFolder + imgExtension;
+const destFiles = outputFolder + imgExtension;
+
 
 function clean(done) {
-	del([ outputFolder + imgExtension ]);
+	del([ destFiles ]);
 	gulp_cache.clearAll();
 	done();
 }
 
 function cleanAll(done) {
-	del([ inputFolder + imgExtension, outputFolder + imgExtension ]);
+	del([ srcFiles, destFiles ]);
 	gulp_cache.clearAll();
 	done();
 }
 
 function imgLossless() {
-	del([outputFolder + imgExtension]);
+	del([destFiles]);
 	return gulp
-		.src(inputFolder)
+		.src(srcFiles)
 		.pipe(
 			gulp_cache(
 				gulp_imagemin([
@@ -62,9 +65,9 @@ function imgLossless() {
 }
 
 function imgLossy() {
-	del([outputFolder + imgExtension]);
+	del([destFiles]);
 	return gulp
-		.src(inputFolder)
+		.src(srcFiles)
 		.pipe(
 			gulp_cache(
 				gulp_imagemin([
@@ -101,9 +104,9 @@ function imgLossy() {
 }
 
 function imgHard() {
-	del([outputFolder + imgExtension]);
+	del([destFiles]);
 	return gulp
-		.src(inputFolder)
+		.src(srcFiles)
 		.pipe(
 			gulp_cache(
 				gulp_imagemin([

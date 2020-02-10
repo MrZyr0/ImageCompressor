@@ -21,6 +21,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 &nbsp; <!-- break line -->
 
+## [1.0.1] - 2019-02-10
+### Fixed
+
+- Change source & destination path in functions
+
+
 ## [1.0.0] - 2019-02-10
 ### Added
 
