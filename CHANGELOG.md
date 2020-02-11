@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Create an `help` command
 - Call gulp anywhere with any folder to any folder
+- Add support for other assets like fonts
 
 ### Fixed
 
